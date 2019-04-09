@@ -44,3 +44,10 @@ steps:
   inputs:
     testResultsFiles: "**/TEST-*.xml"
     testRunTitle: 'Python $(PYTHON_VERSION)'
+
+- task: AzureRMWebAppDeployment@3
+  displayName: Azure App Service Deploy
+  inputs:
+    appType: webAppContainer
+    ConnectedServiceName: AzurePrimary
+    WebAppName: DjangoPipelines
