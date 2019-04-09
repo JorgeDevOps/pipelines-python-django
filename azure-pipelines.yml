@@ -48,6 +48,6 @@ steps:
 - task: AzureRMWebAppDeployment@3
   displayName: Azure App Service Deploy
   inputs:
-    appType: webAppContainer
+    appType: webAppLinux
     ConnectedServiceName: AzurePrimary
     WebAppName: DjangoPipelines
